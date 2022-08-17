@@ -1,5 +1,3 @@
-
-
 var player = "Artemis";
 var jogadas = 0;
 
@@ -54,7 +52,7 @@ function jogar(id) {
       player = "Artemis";
     }
   }
-  if (intart && player == "Luna") {
+  if (intart && jogadas % 2 != 0) {
     jogar(posicaoia());
   }
 }
@@ -151,3 +149,7 @@ function mudarFundo(imgSelecionada) {
   const imagemEl = document.querySelector(`#img_${imgSelecionada}`);
   document.body.style.backgroundImage = `url(${imagemEl.src})`;
 }
+
+
+
+
