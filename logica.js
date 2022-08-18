@@ -27,11 +27,6 @@ function jogar(id) {
 
     jogadas++;
 
-    if (jogadas >= 9) {
-      document.querySelector("body > p").innerHTML = "Fim do jogo! Deu velha! ";
-      return false;
-    }
-
     if (ganhar()) {
       if (player == "Artemis") {
         document.querySelector("body > p").innerHTML =
@@ -43,6 +38,11 @@ function jogar(id) {
         document.getElementById("gan_lun").style.display = "block";
       }
 
+      return false;
+    }
+
+    if (jogadas >= 9) {
+      document.querySelector("body > p").innerHTML = "Fim do jogo! Deu velha! ";
       return false;
     }
 

@@ -39,12 +39,13 @@ h2 {
 
 table {
   background-color: rgba(255, 255, 255, 0);
-  border-style: dotted;
+  border-style: hidden;
   box-shadow: 3px 3px 3px rgb(108, 108, 108);
 }
 
 td {
   border-radius: 5%;
+  border: 2px solid rgba(102, 68, 94, 0.549);
 }
 
 td:hover {
